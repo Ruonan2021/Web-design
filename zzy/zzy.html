@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+        <title>老大姐想要的爱心动画</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="my_script.js"></script>
+    </head>
+
+    <body>
+        
+
+        <!-- <div class="scene">
+
+
+            <div class="wall wall1"></div>
+            <div class="wall wall2"></div>
+            <div class="wall wall3"></div>
+            <div class="wall wall4"></div>
+
+            <div class="container">
+                <div class="box">
+                    <div class="heartCube" style="--i:1">
+                        <div class="side"></div>
+                        <div class="side"></div>
+                        <div class="side"></div>
+                        <div class="side"></div>
+                        <div class="side"></div>
+                        <div class="side"></div>
+                    </div>
+                    <div class="heartCube" style="--i:2">
+                        <div class="side"></div>
+                        <div class="side"></div>
+                        <div class="side"></div>
+                        <div class="side"></div>
+                        <div class="side"></div>
+                        <div class="side"></div>
+                    </div>
+                    <div class="heartCube" style="--i:3">
+                        <div class="side"></div>
+                        <div class="side"></div>
+                        <div class="side"></div>
+                        <div class="side"></div>
+                        <div class="side"></div>
+                        <div class="side"></div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+
+        <div class="navigation">
+            <div class="banner">
+                <!-- <img src="margret1.jpg" class="cover"> -->
+            </div>
+
+            <div class="navLink">
+                <div id="changedImg"></div>
+                <ul class="changedul">
+                    <li style="--clr:#00ade1" rel="riluo">
+                        <a href="#" data-text="&nbsp;爱在黄昏日落">&nbsp;爱在黄昏日落&nbsp;</a>
+                    </li>
+                    <li style="--clr:#dc00d4" rel="mogu">
+                        <a href="#" data-text="&nbsp;小蘑菇">&nbsp;小蘑菇&nbsp;</a>
+                    </li>
+                    <li style="--clr:#ff6493" rel="margret">
+                        <a href="#" data-text="&nbsp;玛格丽特">&nbsp;玛格丽特&nbsp;</a>
+                    </li>
+                    <li style="--clr:#ffdd1c" rel="hhs">
+                        <a href="#" data-text="&nbsp;荷花酥">&nbsp;荷花酥&nbsp;</a>
+                    </li>
+                    <li style="--clr:#00dc82" rel="yrbc">
+                        <a href="#" data-text="&nbsp;椰蓉薄脆">&nbsp;椰蓉薄脆&nbsp;</a>
+                    </li>
+                    <li style="--clr:#00ade1" rel="qc">
+                        <a href="#" data-text="&nbsp;各种千层">&nbsp;各种千层&nbsp;</a>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+
+        <section class="secBtn">
+            <header>
+                <div class="toggle"></div>
+                <a href="#" class="btn">Contact with me</a>
+            </header>
+
+            <div class="imgBxPortrait">
+                <img src="mainPortrait.jpg" class="coverImg">
+            </div>
+
+            <div class="content">
+                <h2>张卓颖</h2>
+                <h3>欢迎来到你的主页</h3>
+                <p>这是一个小小的礼物，工作之余闲下来为你写了一个个人主页。一开始你叫我写一个会爱心代码，
+                    看着看着就觉得不如写一个特别一点的有意思。当然，爱心的元素也还在，只是换了种形式（看得见的和看不见的嘿嘿）。
+                    很凑巧，你打开了所有的朋友圈，我便可以在那里面寻找素材。暑假回家你开始了喜欢的烘焙学习，拍了不少好看的照片。听说你想开一个甜品店，那这个主页就当成记录你甜点作品的秘密基地吧。
+                </p>
+            </div>
+
+            <footer>
+                <ul class="contactMethods">
+                    <li><a href="#"><img src="wechaticon.png"></a></li>
+                    <li><a href="#"><img src="weiboicon.png"></a></li>
+                    <li><a href="#"><img src="phoneicon.png"></a></li>
+                </ul>
+
+                <p class="copyrightText">©滚蛋吧，多肽</p>
+            </footer>
+
+
+        </section>
+
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+        <script type="text/javascript">
+            $('ul.changedul li').hover(function() {
+                $('#changedImg').removeClass().addClass($(this).attr('rel'));
+                $(this).addClass('active').siblings().removeClass('active');
+            })
+        </script>
+
+    </body>
+
+</html>
